@@ -1,0 +1,11 @@
+services:
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: nasar
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: blog
+    ports:
+      - 5432:5432
